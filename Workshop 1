@@ -1,1 +1,67 @@
+JAVASCRIPT WARMUP 2
+Type in document.write("Hello World!); What happens?
+  Replaces the document with given text.
+Type in alert(“Hello World”); What happens?
+  Gives a pop-up alert on top of the website with given text.
+Type in console.log(“Hello World”); What happens?
+  Logs the given text in the console view of website. (F12)
+Type in prompt("Anna nimesi...")
+  Gives a prompt pop-up similar to alert with the given prompt.
 
+Try also adding the code in the SCRIPT-section of the example1.html -page and then loading the page.
+  <script>
+        for (var i = 0; i < 400; i++) {
+            console.log("This round is " + i);
+        }
+        window.alert("Kohta räjähtää...");
+        document.write("Testis");
+        console.log("Logsolecon");
+    </script>
+
+CONDITIONALS 4
+var x = prompt("How old is the man?");
+var order='Beer';
+if (x>50) {
+    document.write("He's over 50!");
+} else if (x<=50 && x>30){
+    document.write("Middle aged man, who ordered some "+order);
+} else if (x<=30 && x>20){
+    document.write("Young adult, who ordered some "+order);
+} else {
+    document.write("It seems you're bit underaged.");
+}
+!!! console.log(+x", who odered some"+order); !!! // En keksinyt ratkaisua...
+
+LOOPS 5.
+var arr = [];
+for (var i=0; i<15; i++) {
+    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log('Generated number:', randomNumber);
+    arr.push(randomNumber);
+}
+document.write('<h2>Generated Numbers:</h2>');
+document.write('<ul>');
+  for (var i = 0; i < arr.length; i++) {
+    document.write('<li>' + arr[i] + '</li>');
+    }
+    document.write('</ul>');
+
+FUNCTIONS 6.
+function addNumbers(a, b) {
+return a + b;
+}
+var num1 = 60;
+var num2 = 50;
+var sum = addNumbers(num1, num2);
+    if (sum > 100) {
+        alert('The sum of the numbers is over 100!');
+        }
+
+document.write('<h2>Numbers and Their Sum</h2>');
+document.write('<p>Number 1: ' + num1 + '</p>');
+document.write('<p>Number 2: ' + num2 + '</p>');
+document.write('<p>Sum: ' + sum + '</p>');
+
+console.log('Number 1:', num1);
+console.log('Number 2:', num2);
+console.log('Sum:', sum);
